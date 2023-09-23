@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <style>
+        .container{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        width: 27rem;
+        position: relative;
+        
+        top: 35em;
+        left: 35em;
+       
+        border-radius: 1rem;
+        background-color: antiquewhite;
+        scroll-behavior: smooth;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="#heading">
+          <h1><%=date%></h1>      
+    </div>
+
+    <div class="box">
+        
+        <div class="item">
+            <!-- <% for(let i=0;i<newlistitem.length ;i++){ %> -->
+           
+            <p><%= newlistitem[i] %></p>
+            <!-- <% }; %> -->
+
+            <li>First List</li>
+        </div>
+        
+
+        <form class="item" action="/" method="post">
+            <input type="text" name="inputted" placeholder="new item">
+            <button type="submit">submit</button>
+          </form>
+    </div>
+
+</div>
+   
+   
+  
+ 
+
+  
+</body>
+</html>
